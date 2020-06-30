@@ -1,0 +1,51 @@
+/* pages/order/order.wxss */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-container{
+  width: 50%;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  color: white;
+  border-radius: 30rpx;
+  margin-top: 40rpx;
+}
+
+.input-container {
+  margin-top      : 20rpx;
+  width           : 100%;
+  height          : 160rpx;
+  background-color: #F2F2F2;
+}
+
+.input-container textarea {
+  width    : 100%;
+  height   : 100%;
+  font-size: 24rpx;
+  padding  : 10rpx 10rpx;
+}
+
+.mobile-container {
+  width           : 80%;
+  height          : 80rpx;
+  background-color: #F2F2F2;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  margin-bottom   : 40rpx;
+}
+
+.mobile-container input {
+  width    : 100%;
+  height   : 80rpx;
+  font-size: 34rpx;
+  padding  : 0 20rpx;
+}

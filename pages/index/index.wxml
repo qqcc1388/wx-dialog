@@ -1,0 +1,83 @@
+<!-- pages/order/order.wxml -->
+<kz-waybill-bar bind:onTap="onBarTap" titiles="{{titles}}" menus="{{menus}}" selectIndex="{{selectIndex}}" menuIndex="{{menuIndex}}"></kz-waybill-bar>
+
+
+<view class="container">
+    <view class="action-container" bind:tap="normalAction">普通弹窗</view>
+    <view class="action-container" bind:tap="loginAction">登录弹窗</view>
+    <view class="action-container" bind:tap="closeAction">关闭运单弹窗</view>
+    <view class="action-container" bind:tap="mobileAction">收入手机号弹窗</view>
+</view>
+
+<!-- 普通弹窗 -->
+<kz-dialog wx:if="{{showDialog}}" bind:onTap="onDialogTap" title="我是弹窗标题" content="我是弹窗内容我是弹弹窗内容我是弹窗内容我是弹窗内容我是弹窗内容我是弹窗内容我是弹窗内容我是弹窗内容我是弹窗内容" actions="{{['取消','确定']}}" mark:key="normal"></kz-dialog>
+<!-- <kz-dialog wx:if="{{showDialog}}" bind:onTap="onDialogTap" content="我是弹窗内容我是弹弹窗内容我是弹窗内容我是弹窗内容我是弹窗内容我是弹窗内容我是弹窗内容我是弹窗内容我是弹窗内容" actions="{{['取消','确定']}}" mark:key="normal"></kz-dialog> -->
+<!-- <kz-dialog wx:if="{{showDialog}}" bind:onTap="onDialogTap" title="我是弹窗标题" actions="{{['取消']}}" mark:key="normal"></kz-dialog> -->
+<!-- <kz-dialog wx:if="{{showDialog}}" bind:onTap="onDialogTap" title="我是弹窗标题"  destructive="{{0}}" actions="{{['确定']}}" mark:key="normal"></kz-dialog> -->
+
+
+<!-- 登录授权弹窗 -->
+<kz-dialog wx:if="{{loginDialog}}" bind:onTap="onDialogTap" isAuth="{{true}}" bind:onAuth="onAuth" actions="{{['放弃授权','同意授权']}}" title="微信授权登录" content="您暂未授权获取您的信息，为了能正常使用小程序的功能，请允许我们获取您的信息。" mark:key="login"></kz-dialog>
+
+<!-- 关闭运单弹窗 -->
+<kz-dialog wx:if="{{showWaybill}}" bind:onTap="onDialogTap" actions="{{['取消','确认关闭']}}" title="关闭运单" content="关闭运单后，未送达的货物后被认定为丢失。您还要继续确认吗？" mark:key="bill">
+	<view slot="content" class="input-container">
+		<textarea name="textarea" bindinput="inputchange" placeholder="请说明关单原因" placeholder-style="color:red" auto-focus="{{true}}"></textarea>
+	</view>
+</kz-dialog>
+
+<!-- 输入手机号弹窗 -->
+<kz-dialog wx:if="{{showMobile}}" bind:onTap="onDialogTap" title="请输入手机号" mark:key="mobile">
+	<view class="mobile-container">
+		<input bindinput="inputMobilechange" placeholder="请输入手机号" auto-focus="{{true}}" maxlength="11" type="number"></input>
+	</view>
+</kz-dialog>
+
+
+
+
+
+menuIndex
+menuIndexmenuIndexmenuIndex
+menuIndex
+menuIndex
+menuIndex
+menuIndexmenuIndexmenuIndex
+menuIndex
+menuIndex
+menuIndex
+menuIndexmenuIndexmenuIndex
+menuIndex
+menuIndex
+menuIndex
+menuIndexmenuIndexmenuIndex
+menuIndex
+menuIndex
+menuIndex
+menuIndexmenuIndexmenuIndex
+menuIndex
+menuIndex
+menuIndex
+menuIndexmenuIndexmenuIndex
+menuIndex
+menuIndex
+menuIndex
+menuIndexmenuIndexmenuIndex
+menuIndex
+menuIndex
+menuIndex
+menuIndexmenuIndexmenuIndex
+menuIndex
+menuIndex
+menuIndex
+menuIndexmenuIndexmenuIndex
+menuIndex
+menuIndex
+menuIndex
+menuIndexmenuIndexmenuIndex
+menuIndex
+menuIndex
+menuIndex
+menuIndexmenuIndexmenuIndex
+menuIndex
+menuIndex

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "kz-dialog":"../components/kz-dialog/kz-dialog"
+
+  }
+}
